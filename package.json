@@ -1,0 +1,44 @@
+{
+  "name": "node-argocd",
+  "version": "0.0.1",
+  "description": "wrapper for argocd cli",
+  "main": "index.js",
+  "scripts": {
+    "release": "release-it"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naimo84/node-argocd.git"
+  },
+  "keywords": [
+    "argocd",
+    "cli",
+    "wrapper"
+  ],
+  "author": "naimo84",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naimo84/node-argocd/issues"
+  },
+  "homepage": "https://github.com/naimo84/node-argocd#readme",
+  "dependencies": {
+    "command-exists": "^1.2.9",
+    "got": "^11.8.3",
+    "js-yaml": "^4.1.0"
+  },
+  "funding": {
+    "type": "paypal",
+    "url": "https://paypal.me/NeumannBenjamin"
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release v${version}"
+    },
+    "github": {
+      "release": true
+    }
+  },
+  "devDependencies": {
+    "release-it": "^14.11.8"
+  }
+}
