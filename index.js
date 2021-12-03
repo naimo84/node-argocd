@@ -12,6 +12,7 @@ async function execute(command, outputYaml = false) {
         try {
             await commandExists(__dirname + '/bin/argocd')
         } catch {
+            if (!fs.existsSync(__dirname + '/bin')) fs.mkdirSync(__dirname + '/bin');
             await pipeline(
                 got.stream('https://github.com/argoproj/argo-cd/releases/latest/download/argocd-linux-amd64'),
                 fs.createWriteStream(__dirname + '/bin/argocd')
